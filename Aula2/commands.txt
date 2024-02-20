@@ -1,0 +1,30 @@
+json-server --port 17001 --watch listaCompras.json
+
+No browser: localhost:17001
+
+http://localhost:17001/lista -> Mostra todos os elementos da lista
+
+http://localhost:17001/lista/1 -> Procura o id 1
+
+http://localhost:17001/lista?_sort=nome -> Mostra os elementos ordenados pelo campo "nome"
+
+
+
+Dataset mapa-virtual.json
+
+
+cidade id = 50 -> /cidades/50
+
+lista de cidades ordenadas pelo nome -> /cidades?_sort=nome
+
+lista de cidades do distrito de braga ordenadas pelo nome -> /cidades?_sort=nome&distrito=braga
+
+ligações com origem em c1 -> /ligacoes?origem=c1
+
+ligações com destino em c10 -> /ligacoes?destino=c10
+
+
+
+Executar o servidor
+
+node <nomeDoFicheiro>.json
